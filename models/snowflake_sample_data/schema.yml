@@ -1,0 +1,14 @@
+
+
+
+version: 2
+
+sources:
+  - name: snowflake_sample_data
+    description : ' MY first database created in SF'
+    database : snowflake_sample_data
+    schema: TPCDS_SF10TCL
+    tables:
+      - name: CALL_CENTER
+      
+  
