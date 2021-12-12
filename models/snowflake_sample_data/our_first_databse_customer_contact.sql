@@ -1,5 +1,5 @@
 with contact_new as (
-        select contact_id,cust_id,city 
+        select  contact_id,cust_id,city 
         from contact
         )
 
