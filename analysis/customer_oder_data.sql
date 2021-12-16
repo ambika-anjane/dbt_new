@@ -1,10 +1,10 @@
-ord_status = ['success','fail','completed','pending']
+{% set ord_status = ['success','fail','completed','pending'] %}
 with compared as (
-    select * from ref {{'our_first_databse_customer_contact'}}
+    select * from  {{ ref('our_first_databse_customer')}}
     {% for ord in ord_status %}
     where ord = 'pending'
     {% endfor %}
-)
+),
 
 select * from compared
 

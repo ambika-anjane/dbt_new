@@ -1,0 +1,1 @@
+select order_id,order_date,ord_status,amount from order_data
