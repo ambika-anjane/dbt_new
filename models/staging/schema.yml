@@ -8,8 +8,18 @@ models:
       - name: order_id
         description: "The primary key for this table"
         tests:
-          - not_null
           - unique
+          - not_null
+      - name: ord_status
+        tests:
+          - accepted_values:
+              values:
+               - success
+               - Failure
+               - Pending
+               - failure
+               - pending
+               
 
   - name: our_first_databse_customer
     description: "A starter dbt model"
@@ -17,8 +27,8 @@ models:
       - name: cust_id
         description: "The primary key for this table"
         tests:
-          - not_null
           - unique
+          - not_null
   
 
   
