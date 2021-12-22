@@ -17,7 +17,22 @@ models:
           tests:
             - unique
             - not_null
-
+        - name: ord_status
+          tests:
+          - accepted_values:
+              values: ['Placed', 'Shipped', 'Completed', 'return_pending', 'returned']
+  - name: stg_payments
+    description: "A starter dbt model"
+    columns:
+        - name: payment_id
+          description: Primary key of the table
+          tests:
+            - unique
+            - not_null
+        - name: payment_method
+          tests:
+          - accepted_values:
+              values: ['card','Card','Net Banking']
 
            
 

@@ -6,6 +6,13 @@ with customers as (
 
 ),
 
+emp as (
+
+    select * from {{ref('data_employee')}}
+
+),
+
+
 orders as (
 
     select * from {{ ref('stg_order') }}
