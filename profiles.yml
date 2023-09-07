@@ -6,4 +6,4 @@ dbt_new:
       extensions:
         - httpfs
         - parquet
-target: dev
+ target: dev
