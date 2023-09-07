@@ -1,0 +1,12 @@
+duck_db:
+  outputs:
+    dev:
+      type: duckdb
+      path: '/data/our_first_databse.duckdb'
+      extensions:
+        - httpfs
+        - parquet
+      threads: 1
+      dbname: our_first_databse
+      schema: main
+  target: dev
