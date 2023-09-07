@@ -1,4 +1,4 @@
-duck_db:
+dbt_new:
   outputs:
     dev:
       type: duckdb
@@ -7,6 +7,5 @@ duck_db:
         - httpfs
         - parquet
       threads: 1
-      dbname: our_first_databse
       schema: main
   target: dev
