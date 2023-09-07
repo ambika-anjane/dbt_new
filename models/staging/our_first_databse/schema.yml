@@ -4,35 +4,12 @@ models:
   - name: stg_customers
     description: "A starter dbt model"
     columns:
-        - name: customer_id
+        - name: Customer_ID
           description: Primary key of the table
           tests:
             - unique
             - not_null
-  - name: stg_order
-    description: "A starter dbt model"
-    columns:
-        - name: order_id
-          description: Primary key of the table
-          tests:
-            - unique
-            - not_null
-        - name: ord_status
-          tests:
-          - accepted_values:
-              values: ['Placed', 'Shipped', 'Completed', 'return_pending', 'returned']
-  - name: stg_payments
-    description: "A starter dbt model"
-    columns:
-        - name: payment_id
-          description: Primary key of the table
-          tests:
-            - unique
-            - not_null
-        - name: payment_method
-          tests:
-          - accepted_values:
-              values: ['card','Card','Net Banking']
+
 
            
 
