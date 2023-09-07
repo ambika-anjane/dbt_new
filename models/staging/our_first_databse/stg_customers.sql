@@ -1,5 +1,5 @@
 select
-    customer_id,
-    first_name,
-    last_name
-    from {{source('public','customer')}}
+    customerID,
+    Customer_Name,
+    Contact_Name
+    from {{source('main','Customers')}}
