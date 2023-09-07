@@ -6,6 +6,5 @@ dbt_new:
       extensions:
         - httpfs
         - parquet
-      threads: 1
-      schema: main
-  target: dev
+target: dev
+
