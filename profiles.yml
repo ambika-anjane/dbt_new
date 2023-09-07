@@ -1,4 +1,5 @@
 dbt_new:
+  target: dev
   outputs:
     dev:
       type: duckdb
@@ -6,4 +7,3 @@ dbt_new:
       extensions:
         - httpfs
         - parquet
- target: dev
