@@ -1,7 +1,7 @@
 
 
 with source as (
-    select * from "main"."main"."Customers"
+    select * from "main"."Customers"
 
 ),
 
