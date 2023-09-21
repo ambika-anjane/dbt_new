@@ -1,0 +1,9 @@
+dbt_new:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path:  '/data/our_first_databse.duckdb'
+      extensions:
+        - httpfs
+        - parquet
