@@ -3,7 +3,7 @@ dbt_new:
   outputs:
     dev:
       type: duckdb
-      path:  '/data/our_first_databse.duckdb'
+      path:  '/data/northwind.duckdb'
       extensions:
         - httpfs
         - parquet
