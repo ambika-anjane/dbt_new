@@ -2,7 +2,7 @@ version : 2
 sources: 
   - name : main
     tables:
-     - name: Customer
+     - name: Customers
      
     
 
