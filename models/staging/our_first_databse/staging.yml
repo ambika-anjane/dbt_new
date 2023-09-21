@@ -3,7 +3,6 @@ sources:
   - name : northwind
     schema: main
     meta:
-    "{{ env_var('DUCKDB_DIR', 'data') }}/raw/{name}.csv"
       external_location: "{{ env_var('/root/.dbt/','data') }}/raw/{northwind}.duckdb"
     tables:
       - name: Customers
