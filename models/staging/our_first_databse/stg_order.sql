@@ -3,4 +3,4 @@ select
     customer_id,
     order_date,
     ord_status
-    from {{source('public','order_data')}}
+    from {{source('main','order_data')}}
