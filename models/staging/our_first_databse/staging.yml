@@ -2,7 +2,8 @@ version : 2
 sources: 
   - name : northwind
     schema: main
-    
+    meta:
+      external_location: "{{ env_var('/root/.dbt/northwind.duckdb') }}"
     tables:
       - name: Customers
      
