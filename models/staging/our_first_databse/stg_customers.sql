@@ -1,7 +1,7 @@
 
 
 with source as (
-    select * from "northwind"."main"."Customers"
+    select * from "main"."main"."Customers"
 
 ),
 
