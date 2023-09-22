@@ -1,10 +1,8 @@
 dbt_new:
+
   target: dev
   outputs:
     dev:
       type: duckdb
-      schema: main
-      path:  '/root/.dbt/northwind.duckdb'
-      extensions:
-        - httpfs
-        - parquet
+      path: 'jaffle_shop.duckdb'
+      threads: 24
