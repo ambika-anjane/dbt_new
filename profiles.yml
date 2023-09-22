@@ -4,5 +4,5 @@ dbt_new:
   outputs:
     dev:
       type: duckdb
-      path: '/root/.dbt/northwind.duckdb'
+      path: '/root/.dbt/jaffle_shop.duckdb'
       threads: 24
