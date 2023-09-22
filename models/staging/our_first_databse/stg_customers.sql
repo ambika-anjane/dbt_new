@@ -2,5 +2,5 @@
 
 {{ config(materialized = 'view') }}
 
-SELECT customerID,customerName
-FROM {{ source('northwind', 'Customers') }}
+SELECT *
+FROM {{ source('jaffle_Shop', 'raw_customers') }}
