@@ -10,6 +10,7 @@ sources:
 
     tables:
       - name: Customers
+      - name: Employees
      
     
 
