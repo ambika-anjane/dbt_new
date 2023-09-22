@@ -1,19 +1,6 @@
 
 
-with source as (
-    select * from "northwind"."main"."Customers"
+{{ config(materialized = 'view') }}
 
-),
-
-renamed as (
-
-    select
-       customerID,
-       Customer_Name,
-       Contact_Name
-
-    from source
-
-)
-
-select * from renamed
+SELECT customerID,customerName
+FROM {{ source('northwind', 'customers') }}
