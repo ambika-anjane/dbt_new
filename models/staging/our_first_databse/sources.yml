@@ -1,0 +1,10 @@
+version : 2
+sources: 
+    name: northwind
+    schema: main
+    meta:
+      external_location: '/root/.dbt/external-1/northwind.duckdb'
+    
+    tables:
+      - name: Customers
+      - name: Employees
