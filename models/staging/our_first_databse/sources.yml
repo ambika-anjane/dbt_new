@@ -6,7 +6,7 @@ sources:
       external_location: '/root/.dbt/jaffle_shop.duckdb'
       
     tables:
-      - name: Customers
+      - name: raw_customers
       - name: Employees
      
     
