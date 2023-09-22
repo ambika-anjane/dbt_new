@@ -3,7 +3,7 @@ sources:
     name: jaffle_shop
     schema: main
     meta:
-      external_location: '/root/.dbt/jaffle_shop.duckdb'
+      external_location: '/root/.dbt/external-1/northwind.duckdb'
       
     tables:
       - name: raw_customers
