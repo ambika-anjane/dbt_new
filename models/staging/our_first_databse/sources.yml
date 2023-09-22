@@ -1,8 +1,7 @@
 version : 2
 sources: 
-
-   
-    schema: main
+    
+    name: main
     meta:
       external_location: '/root/.dbt/northwind.duckdb'
 
