@@ -1,12 +1,12 @@
 version : 2
 sources: 
-    name: jaffle_shop
+    name: northwind
     schema: main
     meta:
       external_location: '/root/.dbt/external-1/northwind.duckdb'
       
     tables:
-      - name: raw_customers
+      - name: Customers
       - name: Employees
      
     
