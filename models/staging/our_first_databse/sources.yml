@@ -1,6 +1,6 @@
 version : 2
 sources: 
-  - name: northwind
+  - name: jaffle_shop
     schema: main
     meta:
       external_location: '/root/.dbt/jaffle_shop.duckdb'
