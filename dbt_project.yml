@@ -12,7 +12,7 @@ profile: 'dbt_new'
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
-source-paths: ["models"]
+model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 data-paths: ["data"]
@@ -31,7 +31,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
- dbt_demo:
-   staging:
-     our_first_databse:
-        +materialized: view
+  dbt_demo:
+     staging:
+       our_first_databse:
+          +materialized: view
