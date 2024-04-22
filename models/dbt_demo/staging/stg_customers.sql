@@ -1,5 +1,5 @@
 
 {{ config(materialized = 'view') }}
 
-SELECT customerID
+SELECT employee_id
 FROM {{ source('dbt_training', 'employees') }}
