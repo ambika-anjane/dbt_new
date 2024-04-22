@@ -2,9 +2,9 @@
 
 version : 2
 sources: 
-  - name: northwind
-    database: northwind
-    schema: main
+  - name: dbt_training
+    database: dbt_training
+    schema: dbtairflow
    
   
       
