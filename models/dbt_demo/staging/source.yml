@@ -4,7 +4,7 @@ version : 2
 sources: 
   - name: dbt_training
     database: dbt_training
-    schema: dbtairflow
+    schema: dbt_airflow
    
   
       
