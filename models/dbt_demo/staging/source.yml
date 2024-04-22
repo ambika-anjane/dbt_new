@@ -9,4 +9,4 @@ sources:
   
       
     tables:
-      - name: Customers
+      - name: employees
