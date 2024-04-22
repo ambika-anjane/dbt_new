@@ -4,7 +4,7 @@ models:
   - name: stg_customers
     description: "A starter dbt model"
     columns:
-        - name: CustomerID
+        - name: employee_id
           description: Primary key of the table
           tests:
             - unique
